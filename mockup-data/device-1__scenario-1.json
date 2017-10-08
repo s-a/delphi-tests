@@ -1,0 +1,12 @@
+{
+	"message": {
+		"defaultInterval" : 59,
+		"dictionary" : {
+			"measurement" : {
+				"interval" : 50,
+				"request" : "",
+				"response" : "scenario-1-measurements.data"
+			}
+		}
+	}
+}
