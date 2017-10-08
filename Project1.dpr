@@ -1,29 +1,25 @@
 program Project1;
 
-
 {$APPTYPE CONSOLE}
-
 {$R *.res}
 
 uses
   System.SysUtils,
-  MeasurementsScenario;
+  MeasurementScenario;
 
-
-
-procedure run(scenario : integer);
+procedure run(scenario: integer);
 var
-   s : TMeasurementsScenario;
+  s: TMeasurementScenario;
+
 begin
 
 end;
-
 
 begin
 
   try
     try
-//      scenario := TMeasurementsScenario.Create('mockup-data', 'device-1__scenario-1');
+      // scenario := TMeasurementsScenario.Create('mockup-data', 'device-1__scenario-1');
       run(1);
     except
       on E: Exception do
@@ -32,8 +28,8 @@ begin
       end;
     end;
   finally
-   // scenario.free();
-    writeln ('Press ENTER to continue');
+    // scenario.free();
+    Writeln('Press ENTER to continue');
     readln;
   end;
 

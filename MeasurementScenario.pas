@@ -1,11 +1,11 @@
-unit MeasurementsScenario;
+unit MeasurementScenario;
 
 interface
 
 implementation
 
 type
-   TMeasurementsScenario = Class()
+   TMeasurementScenario = Class
      private
       procedure Initialize(DataFolder, ScenarioName : String);
      public
@@ -14,21 +14,19 @@ type
 
    end;
 
-  constructor TMeasurementsScenario.Create(DataFolder, ScenarioName : String);
+  constructor TMeasurementScenario.Create(DataFolder, ScenarioName : String);
   begin
     self.Initialize(DataFolder, ScenarioName);
   end;
 
-  destructor TMeasurementsScenario.Destroy;
+  destructor TMeasurementScenario.Destroy;
   begin
     //inherited;
   end;
 
-  procedure TMeasurementsScenario.Initialize(DataFolder, ScenarioName : String);
+  procedure TMeasurementScenario.Initialize(DataFolder, ScenarioName : String);
   begin
     Writeln('done');
   end;
-
-
 
 end.
